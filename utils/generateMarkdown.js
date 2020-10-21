@@ -40,8 +40,14 @@ function generateMarkdown(userResponses, userInfo) {
     `## Installation 
     ${userResponses.installation}`
   };
-  // Create usage section
 
+  // Create usage section
+  if (userResponses.usage !== ''){
+    draftMarkdown +=
+    `## Usage
+    ${userResponses.usage}`
+  };
+  
   // Create contribution section
 
   // Create tests section
