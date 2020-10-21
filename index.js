@@ -35,6 +35,19 @@ const questions = [
            return true;
         } 
     },
+    // Title of Project
+    {
+        type: 'input',
+        name: 'title',
+        message: 'Enter the title of your project.',
+        // We need to validate that user entered a word
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("You must enter the title of your project.");
+            }
+           return true;
+        }
+    },
 ];
 
 // function to write README file
