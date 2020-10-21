@@ -1,7 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(userResponses, userInfo) {
   // Plug userReponses into table of contents
-
+  let draftTable = `## Table of Contents`;
   // Generate badges
 
   // Add table of contents data to markdown
