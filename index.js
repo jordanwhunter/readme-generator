@@ -134,6 +134,7 @@ async function init() {
         console.log(markdown);
 
         // Write markdown
+        await writeFileAsync('ExampleREADME.md', markdown);
 
     } catch (error) {
         console.log(error);
