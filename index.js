@@ -129,6 +129,9 @@ async function init() {
         console.log("Your GitHub user info: ", userInfo);
 
         // Pass inquirer data and api data to markdown
+        console.log("Generating your markdown")
+        const markdown = generateMarkdown(userResponses, userInfo);
+        console.log(markdown);
 
         // Write markdown
 
