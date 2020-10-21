@@ -114,9 +114,28 @@ function writeToFile(fileName, data) {
 const writeFileAsync = util.promisify(writeToFile);
 
 // function to initialize program
-function init() {
+async function init() {
+    // https://www.w3schools.com/js/js_errors.asp
+    try {
+        // Reference inquirer array with prompts
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
+        // https://www.digitalocean.com/community/tutorials/nodejs-interactive-command-line-prompts
+        const userResponses = await inquirer.prompt(questions);
+        console.log("Your responses: ", userResponses);
+        console.log("Your responses have been logged. Calling to GitHub...");
 
-}
+        // Referencing API.js
+        const userInfo = await api.getUser(userResponses);
+        console.log("Your GitHub user info: ", userInfo);
+
+        // Pass inquirer data and api data to markdown
+
+        // Write markdown
+
+    } catch (error) {
+        console.log(error);
+    }
+};
 
 // function call to initialize program
 init();
