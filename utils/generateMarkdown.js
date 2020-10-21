@@ -55,8 +55,12 @@ function generateMarkdown(userResponses, userInfo) {
     **Please follow guidelines if you choose to contribute.**
     ${userResponses.contributing}`
   };
-  
+
   // Create tests section
+  if (userResponses.tests !== ''){
+    `## Tests
+    ${userResponses.tests}`
+  };
 
   // Connect userResponses to license section
 
