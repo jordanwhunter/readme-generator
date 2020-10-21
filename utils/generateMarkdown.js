@@ -68,7 +68,26 @@ function generateMarkdown(userResponses, userInfo) {
   ${userResponses.license}`;
 
   // Questions section
+  let draftDeveloper = 
+  `
+  ---
   
+  ## Questions?
+  
+  (${userInfo.avatar_url}) 
+  
+  For questions, contact me:
+ 
+  GitHub: [@${userInfo.login}](${userInfo.url})
+  `;
+
+  // If GitHub email is not null, add to Developer section
+  if (userInfo.email !== null) {
+  
+  draftDeveloper +=
+  `
+  Email: ${userInfo.email}
+  `};
 
   // Return markdown
 };
