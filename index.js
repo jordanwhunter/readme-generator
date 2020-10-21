@@ -74,6 +74,13 @@ const questions = [
         name: 'usage',
         message: 'Enter your project instructions and examples of it in use for Usage Section.',
     },
+    // Contributing to project
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'Explain how users can contribute to your project (if necessary).',
+        // Validation not required if question is optional
+    },
 ];
 
 // function to write README file
