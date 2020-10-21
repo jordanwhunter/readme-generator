@@ -13,13 +13,13 @@ const questions = [
         type: 'input',
         name: 'username',
         message: 'Enter your GitHub username.',
-        // We need to validate that user entered a word
+        // We need to validate that user entered at least one word
         // https://stackoverflow.com/questions/57321266/how-to-test-inquirer-validation
         validate: function (answer) {
             if (answer.length < 1) {
                 return console.log("You must enter a GitHub username.");
             }
-           return true;
+            return true;
         }
     },
     // GitHub Repository
@@ -27,12 +27,12 @@ const questions = [
         type: 'input',
         name: 'repository',
         message: 'Enter the name of your repository on GitHub.',
-        // We need to validate that user entered a word
+        // We need to validate that user entered at least one word
         validate: function (answer) {
             if (answer.length < 1) {
                 return console.log("You must enter the name of your GitHub repository.");
             }
-           return true;
+            return true;
         } 
     },
     // Title of Project
@@ -40,12 +40,25 @@ const questions = [
         type: 'input',
         name: 'title',
         message: 'Enter the title of your project.',
-        // We need to validate that user entered a word
+        // We need to validate that user entered at least one word
         validate: function (answer) {
             if (answer.length < 1) {
                 return console.log("You must enter the title of your project.");
             }
-           return true;
+            return true;
+        }
+    },
+    // Project Description
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Enter a description of your project.',
+        // We need to validate that user entered at least one word
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("You must enter a description for your project.");
+            }
+            return true;
         }
     },
 ];
