@@ -81,6 +81,13 @@ const questions = [
         message: 'Explain how users can contribute to your project (if necessary).',
         // Validation not required if question is optional
     },
+    // Test for project
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Provide tests for project, and explain how to test (if necessary).',
+        // Validation not required if question is optional
+    },
 ];
 
 // function to write README file
