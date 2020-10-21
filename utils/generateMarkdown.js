@@ -34,9 +34,12 @@ function generateMarkdown(userResponses, userInfo) {
   // Add table of contents data to markdown
   draftMarkdown += draftTable;
   
-
   // Create installation section
-
+  if (userResponses.installation !== '') {
+    draftMarkdown += 
+    `## Installation 
+    ${userResponses.installation}`
+  };
   // Create usage section
 
   // Create contribution section
