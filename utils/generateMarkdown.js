@@ -89,7 +89,10 @@ function generateMarkdown(userResponses, userInfo) {
   Email: ${userInfo.email}
   `};
 
+  draftMarkdown += draftDeveloper;
+
   // Return markdown
+  return draftMarkdown;
 };
 
 // Export markdown module
