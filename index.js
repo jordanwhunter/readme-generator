@@ -101,7 +101,16 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            return console.log(err);
+        }
+        console.log('Your markdown file has been created.')
+    });
 }
+
+// Reference: https://www.npmjs.com/package/util.promisify
+const writeFileAsync = util.promisify(writeToFile);
 
 // function to initialize program
 function init() {
