@@ -63,8 +63,12 @@ function generateMarkdown(userResponses, userInfo) {
   };
 
   // Connect userResponses to license section
+  draftMarkdown +=
+  `## License
+  ${userResponses.license}`;
 
   // Questions section
+  
 
   // Return markdown
 };
