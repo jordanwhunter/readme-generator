@@ -49,7 +49,13 @@ function generateMarkdown(userResponses, userInfo) {
   };
   
   // Create contribution section
-
+  if (userResponses.contributing !== ''){
+    `## Contributing
+    
+    **Please follow guidelines if you choose to contribute.**
+    ${userResponses.contributing}`
+  };
+  
   // Create tests section
 
   // Connect userResponses to license section
