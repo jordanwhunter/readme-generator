@@ -61,6 +61,13 @@ const questions = [
             return true;
         }
     },
+    // Project Installation
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'Explain how user would install (if necessary).',
+        // Validation not required if question is optional
+    },
 ];
 
 // function to write README file
