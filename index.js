@@ -65,8 +65,14 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'Explain how user would install (if necessary).',
+        message: 'Explain how user would install (if necessary) for Installation Section.',
         // Validation not required if question is optional
+    },
+    // Usage of project
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Enter your project instructions and examples of it in use for Usage Section.',
     },
 ];
 
