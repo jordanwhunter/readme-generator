@@ -1,5 +1,10 @@
+// Global
 const fs = require('fs');
 const inquirer = require('inquirer');
+
+// Internal NPMs
+const api = require('./utils/api.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // array of questions for user
 const questions = [
