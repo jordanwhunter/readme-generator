@@ -77,7 +77,7 @@ const questions = [
     },
     // Select license
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
         message: 'Choose your license for your project.',
         // https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository
