@@ -20,8 +20,13 @@
   
   ## Usage 
   
-   
+  [![usage video](readme-generator-tutorial.gif)](https://drive.google.com/file/d/1S11bCuwkcpm8KrDXaqcMQJ82nAFb9-Tv/view?usp=sharing "Click Me!")<br><br>
   A command-line application that dynamically generates a professional README.md from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). Review the [Good README guide](../../01-HTML-Git-CSS/04-Important/Good-README-Guide/README.md) as a reminder of everything that a quality, professional README contains. The application will be invoked with the following command: node index.
+  
+  ## Contributing
+  
+  
+  Contributions are accepted. Feel free to fork.
   
   ## Tests
   
